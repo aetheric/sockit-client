@@ -1,0 +1,15 @@
+
+# IntelliJ
+.idea/
+out/
+*.iml
+*.ipr
+*.iws
+
+# Node
+coverage/
+node_modules/
+
+# Misc
+logs/
+*.log

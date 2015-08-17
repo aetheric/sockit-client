@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - '0.10'
+before_install:
+  - npm install -g npm@latest
+before_deploy:
+  - npm run build
+deploy:
+  provider: npm
+  email: peterc@aetheric.co.nz
+  skip_cleanup: true
+  api_key:
+    secure: MKGtgteWdt3MNKj/mt70j0ZaZ5c7cbpvcTYtRt0mPLr4vVzfHISpOfmI5w2XefUgimJUK6TKuVplQcrUzT34n/deD8qYoQfcJTKvLM/mUU40QmAxysttgUZLi1IScni2q4P2UasuNY7xEzKROZzchWLBtF4isv1vE5HEAjHW0WY=
+  on:
+    tags: true
